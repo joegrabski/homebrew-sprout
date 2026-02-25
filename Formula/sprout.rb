@@ -5,20 +5,20 @@
 class Sprout < Formula
   desc "Git worktree manager with terminal UI and tmux workflows."
   homepage "https://github.com/joegrabski/sprout"
-  version "0.1.9"
+  version "0.1.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joegrabski/sprout/releases/download/v0.1.9/sprout_0.1.9_darwin_amd64.tar.gz"
-      sha256 "9b786de68570fecd807a6f2156d6e494fc3c4fed735df006cfefb0781afab560"
+      url "https://github.com/joegrabski/sprout/releases/download/v0.1.10/sprout_0.1.10_darwin_amd64.tar.gz"
+      sha256 "341ed6d09c232b69bc7d4df149436fbc9aeee3dc74b8c7b9065cc21eeaac3cf9"
 
       define_method(:install) do
         bin.install "sprout"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joegrabski/sprout/releases/download/v0.1.9/sprout_0.1.9_darwin_arm64.tar.gz"
-      sha256 "6a75a91c207b9108dfd4a831397064ef6f57d98a6cb64a6309f36eb10ed1e1de"
+      url "https://github.com/joegrabski/sprout/releases/download/v0.1.10/sprout_0.1.10_darwin_arm64.tar.gz"
+      sha256 "96d5253271696d5c178a46e905c205a487c68fa2570118c5403cb16fb3b4eea9"
 
       define_method(:install) do
         bin.install "sprout"
@@ -28,15 +28,15 @@ class Sprout < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joegrabski/sprout/releases/download/v0.1.9/sprout_0.1.9_linux_amd64.tar.gz"
-      sha256 "0ced459122a3fe945d7ae0188f649e6100de3013b26c3478f1a9dc6a191f5946"
+      url "https://github.com/joegrabski/sprout/releases/download/v0.1.10/sprout_0.1.10_linux_amd64.tar.gz"
+      sha256 "b4b92df6ea1b65eb1789d546d33c118d7c702ff46e4ea3d6e6420084c6c8c285"
       define_method(:install) do
         bin.install "sprout"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joegrabski/sprout/releases/download/v0.1.9/sprout_0.1.9_linux_arm64.tar.gz"
-      sha256 "145c496bbbfc1776f175a90ea997033ef6b2eaf7a0343adb8d88246db8fec6d9"
+      url "https://github.com/joegrabski/sprout/releases/download/v0.1.10/sprout_0.1.10_linux_arm64.tar.gz"
+      sha256 "aa366a66dc8f3eb73fde75db7e2e42225c38663af9e4ec3bbc043693a7261a00"
       define_method(:install) do
         bin.install "sprout"
       end
